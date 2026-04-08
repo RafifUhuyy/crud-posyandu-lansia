@@ -1,0 +1,274 @@
+/* Reset dan base style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Container utama */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul halaman */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+h3 {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* Tombol */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-tambah {
+    background-color: #28a745;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-tambah:hover {
+    background-color: #218838;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: #212529;
+    padding: 6px 12px;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.btn-edit:hover {
+    background-color: #e0a800;
+}
+
+.btn-hapus {
+    background-color: #dc3545;
+    color: white;
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+.btn-hapus:hover {
+    background-color: #c82333;
+}
+
+.btn-simpan {
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.btn-simpan:hover {
+    background-color: #0056b3;
+}
+
+.btn-kembali {
+    background-color: #6c757d;
+    color: white;
+    margin-top: 10px;
+}
+
+.btn-kembali:hover {
+    background-color: #5a6268;
+}
+
+/* Tabel */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f8f9fa;
+}
+
+td {
+    color: #555;
+}
+
+/* Pesan kosong */
+.tidak-ada-data {
+    text-align: center;
+    color: #777;
+    padding: 30px;
+    font-style: italic;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Pesan sukses dan error */
+.pesan {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.pesan-sukses {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.pesan-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Nomor urut */
+.no-urut {
+    text-align: center;
+    width: 50px;
+}
+
+/* Gaya untuk tombol Logout */
+.btn-logout {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #e74c3c; /* Warna merah */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s;
+    margin-bottom: 15px;
+}
+
+.btn-logout:hover {
+    background-color: #c0392b; /* Merah lebih gelap saat kursor di atasnya */
+}
+
+/* Container untuk membungkus tombol Tambah & Logout agar sejajar */
+.aksi-tombol {
+    display: flex;
+    justify-content: space-between; /* Menjauhkan tombol ke kiri & kanan */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk tombol Logout */
+.btn-logout {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn-logout:hover {
+    background-color: #c0392b;
+}
+
+/* Gaya Khusus Halaman Login */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.login-box h2 {
+    border-left: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
